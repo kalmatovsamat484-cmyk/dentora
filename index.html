@@ -1,0 +1,135 @@
+<nav id="navigation">
+        <a href="#services">Услуги</a>
+        <a href="#about">О клинике</a>
+        <a href="#doctors">Врачи</a>
+        <a href="#prices">Цены</a>
+        <a href="#contacts">Контакты</a>
+    </nav>
+
+    <a href="#appointment" class="nav-button">Записаться</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню">☰</button>
+</div>
+        <div class="hero-actions">
+            <a href="#appointment" class="btn-primary">Записаться на приём ↗</a>
+            <a href="#services" class="btn-secondary">Наши услуги</a>
+        </div>
+
+        <div class="hero-note">
+            <div class="avatars">✦ ✦ ✦</div>
+            <div><strong>Здоровая улыбка начинается здесь</strong><br><small>Индивидуальный подход к каждому</small></div>
+        </div>
+    </div>
+
+    <div class="hero-image">
+        <div class="image-overlay">
+            <span>01 / 04</span>
+            <strong>Искусство<br>здоровой улыбки</strong>
+        </div>
+    </div>
+</div>
+    <div class="services-grid">
+        <article class="service-card">
+            <div class="service-icon">✦</div>
+            <span>01</span>
+            <h3>Лечение зубов</h3>
+            <p>Современное лечение кариеса и восстановление зубов.</p>
+            <a href="#appointment">Подробнее ↗</a>
+        </article>
+
+        <article class="service-card featured">
+            <div class="service-icon">◈</div>
+            <span>02</span>
+            <h3>Имплантация</h3>
+            <p>Восстановление утраченных зубов с использованием современных решений.</p>
+            <a href="#appointment">Подробнее ↗</a>
+        </article>
+
+        <article class="service-card">
+            <div class="service-icon">◇</div>
+            <span>03</span>
+            <h3>Отбеливание</h3>
+            <p>Профессиональный уход для естественной белизны улыбки.</p>
+            <a href="#appointment">Подробнее ↗</a>
+        </article>
+
+        <article class="service-card">
+            <div class="service-icon">⌁</div>
+            <span>04</span>
+            <h3>Ортодонтия</h3>
+            <p>Исправление прикуса и выравнивание зубного ряда.</p>
+            <a href="#appointment">Подробнее ↗</a>
+        </article>
+    </div>
+</div>
+    <div class="about-content">
+        <span class="eyebrow">ПОЧЕМУ DENTORA</span>
+        <h2>Стоматология,<br>в которой вам<br><span>комфортно.</span></h2>
+        <p>Мы объединяем современные технологии, опыт специалистов и внимательное отношение к каждому пациенту.</p>
+
+        <div class="benefit">
+            <span>01</span>
+            <div><strong>Современное оборудование</strong><p>Технологии для точной диагностики и лечения.</p></div>
+        </div>
+
+        <div class="benefit">
+            <span>02</span>
+            <div><strong>Опытные специалисты</strong><p>Индивидуальный подход к каждому случаю.</p></div>
+        </div>
+
+        <div class="benefit">
+            <span>03</span>
+            <div><strong>Комфортная атмосфера</strong><p>Забота о вашем спокойствии на каждом этапе.</p></div>
+        </div>
+    </div>
+</div>
+    <div class="doctors-grid">
+        <article class="doctor-card">
+            <div class="doctor-photo photo-one"></div>
+            <h3>Александр Иванов</h3>
+            <p>Главный врач · Терапевт</p>
+        </article>
+        <article class="doctor-card">
+            <div class="doctor-photo photo-two"></div>
+            <h3>Мария Петрова</h3>
+            <p>Стоматолог · Ортодонт</p>
+        </article>
+        <article class="doctor-card">
+            <div class="doctor-photo photo-three"></div>
+            <h3>Дмитрий Соколов</h3>
+            <p>Хирург · Имплантолог</p>
+        </article>
+    </div>
+</div>
+    <div class="price-list">
+        <div><span>Консультация стоматолога</span><strong>от 500 сом</strong></div>
+        <div><span>Лечение кариеса</span><strong>от 2 500 сом</strong></div>
+        <div><span>Профессиональная чистка</span><strong>от 3 000 сом</strong></div>
+        <div><span>Отбеливание зубов</span><strong>от 7 000 сом</strong></div>
+        <div><span>Имплантация</span><strong>от 25 000 сом</strong></div>
+    </div>
+    <p class="demo-note">* Демонстрационные цены. Требуют подтверждения клиникой.</p>
+</div>
+    <form id="appointmentForm" class="appointment-form">
+        <h3>Записаться на приём</h3>
+
+        <label for="name">Ваше имя</label>
+        <input type="text" id="name" placeholder="Как к вам обращаться?" required>
+
+        <label for="phone">Номер телефона</label>
+        <input type="tel" id="phone" placeholder="+996 555 000 000" required>
+
+        <label for="service">Выберите услугу</label>
+        <select id="service" required>
+            <option value="">Выберите направление</option>
+            <option>Лечение зубов</option>
+            <option>Имплантация</option>
+            <option>Отбеливание</option>
+            <option>Ортодонтия</option>
+            <option>Консультация</option>
+        </select>
+
+        <button type="submit" class="btn-primary form-button">Отправить заявку ↗</button>
+        <small class="form-notice">Нажимая кнопку, вы соглашаетесь на обработку предоставленных данных.</small>
+        <p id="formMessage" role="status"></p>
+    </form>
+</div>
