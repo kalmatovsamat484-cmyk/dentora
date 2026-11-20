@@ -1,135 +1,695 @@
-<nav id="navigation">
-        <a href="#services">Услуги</a>
-        <a href="#about">О клинике</a>
-        <a href="#doctors">Врачи</a>
-        <a href="#prices">Цены</a>
-        <a href="#contacts">Контакты</a>
-    </nav>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <a href="#appointment" class="nav-button">Записаться</a>
-    <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню">☰</button>
-</div>
-        <div class="hero-actions">
-            <a href="#appointment" class="btn-primary">Записаться на приём ↗</a>
-            <a href="#services" class="btn-secondary">Наши услуги</a>
+    <title>DENTORA — Современная стоматология в Бишкеке</title>
+
+    <meta name="description" content="DENTORA — современная стоматология в Бишкеке. Лечение, имплантация, эстетическая стоматология и профессиональная гигиена.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container nav-container">
+
+        <a href="#" class="logo">
+            <span class="logo-icon">D</span>
+            <span>DENTORA<span class="logo-dot">.</span></span>
+        </a>
+
+        <nav class="nav" id="nav">
+            <a href="#services">Услуги</a>
+            <a href="#about">О клинике</a>
+            <a href="#doctors">Специалисты</a>
+            <a href="#reviews">Отзывы</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+
+        <div class="nav-right">
+            <a href="tel:+996555123456" class="nav-phone">
+                +996 555 123 456
+            </a>
+
+            <a href="#appointment" class="button button-dark nav-button">
+                Записаться
+            </a>
         </div>
 
-        <div class="hero-note">
-            <div class="avatars">✦ ✦ ✦</div>
-            <div><strong>Здоровая улыбка начинается здесь</strong><br><small>Индивидуальный подход к каждому</small></div>
+        <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню">
+            <span></span>
+            <span></span>
+        </button>
+
+    </div>
+</header>
+
+
+<main>
+
+    <!-- HERO -->
+
+    <section class="hero">
+        <div class="container hero-grid">
+
+            <div class="hero-content">
+
+                <div class="eyebrow">
+                    <span class="eyebrow-line"></span>
+                    СТОМАТОЛОГИЯ НОВОГО ПОКОЛЕНИЯ
+                </div>
+
+                <h1>
+                    Ваша улыбка.<br>
+                    Наша <span>забота.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Современная стоматология, где технологии
+                    встречаются с вниманием к каждому пациенту.
+                    Здоровые зубы начинаются с правильного выбора.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#appointment" class="button button-green">
+                        Записаться на приём
+                        <span>↗</span>
+                    </a>
+
+                    <a href="#services" class="text-link">
+                        Наши услуги <span>↓</span>
+                    </a>
+                </div>
+
+                <div class="hero-bottom">
+
+                    <div class="rating">
+                        <div class="rating-stars">★★★★★</div>
+                        <div>
+                            <strong>4.9 / 5</strong>
+                            <span>Довольные пациенты</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-note">
+                        <span class="note-dot"></span>
+                        Забота на каждом этапе лечения
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="hero-visual">
+
+                <img
+                    src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1200&q=85"
+                    alt="Современная стоматологическая клиника"
+                    class="hero-image"
+                >
+
+                <div class="hero-image-overlay"></div>
+
+                <div class="floating-card">
+                    <div class="floating-icon">✦</div>
+                    <div>
+                        <strong>Улыбка без компромиссов</strong>
+                        <span>Комфортное лечение</span>
+                    </div>
+                </div>
+
+                <div class="image-label">
+                    <span>01 / 04</span>
+                    <span>Ваше здоровье — наш приоритет</span>
+                </div>
+
+            </div>
+
         </div>
-    </div>
+    </section>
 
-    <div class="hero-image">
-        <div class="image-overlay">
-            <span>01 / 04</span>
-            <strong>Искусство<br>здоровой улыбки</strong>
+
+    <!-- ADVANTAGES -->
+
+    <section class="advantages">
+        <div class="container advantages-grid">
+
+            <div class="advantage">
+                <span class="advantage-number">01</span>
+                <div>
+                    <h3>Современное оборудование</h3>
+                    <p>Точные технологии диагностики и лечения.</p>
+                </div>
+            </div>
+
+            <div class="advantage">
+                <span class="advantage-number">02</span>
+                <div>
+                    <h3>Опытные специалисты</h3>
+                    <p>Индивидуальный подход к каждому пациенту.</p>
+                </div>
+            </div>
+
+            <div class="advantage">
+                <span class="advantage-number">03</span>
+                <div>
+                    <h3>Комфорт и забота</h3>
+                    <p>Создаём спокойную атмосферу для лечения.</p>
+                </div>
+            </div>
+
         </div>
-    </div>
-</div>
-    <div class="services-grid">
-        <article class="service-card">
-            <div class="service-icon">✦</div>
-            <span>01</span>
-            <h3>Лечение зубов</h3>
-            <p>Современное лечение кариеса и восстановление зубов.</p>
-            <a href="#appointment">Подробнее ↗</a>
-        </article>
+    </section>
 
-        <article class="service-card featured">
-            <div class="service-icon">◈</div>
-            <span>02</span>
-            <h3>Имплантация</h3>
-            <p>Восстановление утраченных зубов с использованием современных решений.</p>
-            <a href="#appointment">Подробнее ↗</a>
-        </article>
 
-        <article class="service-card">
-            <div class="service-icon">◇</div>
-            <span>03</span>
-            <h3>Отбеливание</h3>
-            <p>Профессиональный уход для естественной белизны улыбки.</p>
-            <a href="#appointment">Подробнее ↗</a>
-        </article>
+    <!-- SERVICES -->
 
-        <article class="service-card">
-            <div class="service-icon">⌁</div>
-            <span>04</span>
-            <h3>Ортодонтия</h3>
-            <p>Исправление прикуса и выравнивание зубного ряда.</p>
-            <a href="#appointment">Подробнее ↗</a>
-        </article>
-    </div>
-</div>
-    <div class="about-content">
-        <span class="eyebrow">ПОЧЕМУ DENTORA</span>
-        <h2>Стоматология,<br>в которой вам<br><span>комфортно.</span></h2>
-        <p>Мы объединяем современные технологии, опыт специалистов и внимательное отношение к каждому пациенту.</p>
+    <section class="section services" id="services">
 
-        <div class="benefit">
-            <span>01</span>
-            <div><strong>Современное оборудование</strong><p>Технологии для точной диагностики и лечения.</p></div>
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div>
+                    <div class="eyebrow">
+                        <span class="eyebrow-line"></span>
+                        ЧТО МЫ ПРЕДЛАГАЕМ
+                    </div>
+
+                    <h2>Комплексная забота<br>о вашей <span>улыбке.</span></h2>
+                </div>
+
+                <p>
+                    От профилактики до сложного восстановления —
+                    все необходимые стоматологические услуги в одном месте.
+                </p>
+
+            </div>
+
+
+            <div class="services-grid">
+
+                <article class="service-card service-featured">
+
+                    <div class="service-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=900&q=85"
+                            alt="Лечение зубов"
+                        >
+                    </div>
+
+                    <div class="service-info">
+                        <span class="service-index">01 / ЛЕЧЕНИЕ</span>
+                        <h3>Терапевтическая стоматология</h3>
+                        <p>Лечение кариеса, восстановление зубов и сохранение их здоровья.</p>
+                        <a href="#appointment" class="service-link">Подробнее <span>↗</span></a>
+                    </div>
+
+                </article>
+
+
+                <article class="service-card">
+
+                    <div class="service-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=900&q=85"
+                            alt="Эстетическая стоматология"
+                        >
+                    </div>
+
+                    <div class="service-info">
+                        <span class="service-index">02 / ЭСТЕТИКА</span>
+                        <h3>Эстетическая стоматология</h3>
+                        <p>Создание красивой и естественной улыбки.</p>
+                        <a href="#appointment" class="service-link">Подробнее <span>↗</span></a>
+                    </div>
+
+                </article>
+
+
+                <article class="service-card">
+
+                    <div class="service-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=900&q=85"
+                            alt="Имплантация зубов"
+                        >
+                    </div>
+
+                    <div class="service-info">
+                        <span class="service-index">03 / ИМПЛАНТАЦИЯ</span>
+                        <h3>Имплантация</h3>
+                        <p>Восстановление утраченных зубов с использованием современных решений.</p>
+                        <a href="#appointment" class="service-link">Подробнее <span>↗</span></a>
+                    </div>
+
+                </article>
+
+
+                <article class="service-card">
+
+                    <div class="service-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1606811971598-7d1f2e7a7b2c?auto=format&fit=crop&w=900&q=85"
+                            alt="Профессиональная гигиена"
+                        >
+                    </div>
+
+                    <div class="service-info">
+                        <span class="service-index">04 / ПРОФИЛАКТИКА</span>
+                        <h3>Профессиональная гигиена</h3>
+                        <p>Комплексный уход за зубами и профилактика заболеваний.</p>
+                        <a href="#appointment" class="service-link">Подробнее <span>↗</span></a>
+                    </div>
+
+                </article>
+
+            </div>
+
+            <div class="services-bottom">
+                <span>Не нашли нужную услугу?</span>
+                <a href="#appointment">Свяжитесь с нами ↗</a>
+            </div>
+
         </div>
 
-        <div class="benefit">
-            <span>02</span>
-            <div><strong>Опытные специалисты</strong><p>Индивидуальный подход к каждому случаю.</p></div>
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section class="section about" id="about">
+
+        <div class="container about-grid">
+
+            <div class="about-visual">
+
+                <img
+                    src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1100&q=85"
+                    alt="Интерьер стоматологической клиники"
+                >
+
+                <div class="about-badge">
+                    <span>✦</span>
+                    <strong>Здоровье начинается<br>с заботы</strong>
+                </div>
+
+            </div>
+
+
+            <div class="about-content">
+
+                <div class="eyebrow">
+                    <span class="eyebrow-line"></span>
+                    О НАШЕЙ КЛИНИКЕ
+                </div>
+
+                <h2>
+                    Стоматология,<br>
+                    в которой <span>комфортно.</span>
+                </h2>
+
+                <p>
+                    DENTORA — пространство современной стоматологии,
+                    где каждый пациент получает внимание, заботу
+                    и профессиональный подход.
+                </p>
+
+                <p>
+                    Мы стремимся сделать лечение понятным,
+                    комфортным и максимально эффективным.
+                    Ваше доверие — наша главная ценность.
+                </p>
+
+                <div class="about-points">
+
+                    <div>
+                        <span>✓</span>
+                        Индивидуальный план лечения
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+                        Современные методы диагностики
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+                        Внимательное отношение к пациентам
+                    </div>
+
+                </div>
+
+                <a href="#appointment" class="button button-dark">
+                    Познакомиться с нами <span>↗</span>
+                </a>
+
+            </div>
+
         </div>
 
-        <div class="benefit">
-            <span>03</span>
-            <div><strong>Комфортная атмосфера</strong><p>Забота о вашем спокойствии на каждом этапе.</p></div>
+    </section>
+
+
+    <!-- DOCTORS -->
+
+    <section class="section doctors" id="doctors">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div>
+                    <div class="eyebrow">
+                        <span class="eyebrow-line"></span>
+                        НАША КОМАНДА
+                    </div>
+
+                    <h2>Люди, которым<br>можно <span>доверять.</span></h2>
+                </div>
+
+                <p>
+                    За каждой здоровой улыбкой стоит специалист,
+                    который действительно любит свою работу.
+                </p>
+
+            </div>
+
+
+            <div class="doctors-grid">
+
+                <article class="doctor-card">
+                    <div class="doctor-photo">
+                        <img
+                            src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=700&q=85"
+                            alt="Врач стоматолог"
+                        >
+                    </div>
+                    <div class="doctor-info">
+                        <span>СТОМАТОЛОГ-ТЕРАПЕВТ</span>
+                        <h3>Александр Иванов</h3>
+                        <p>Специалист по терапевтическому лечению.</p>
+                    </div>
+                </article>
+
+
+                <article class="doctor-card">
+                    <div class="doctor-photo">
+                        <img
+                            src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=700&q=85"
+                            alt="Врач стоматолог"
+                        >
+                    </div>
+                    <div class="doctor-info">
+                        <span>СТОМАТОЛОГ-ОРТОПЕД</span>
+                        <h3>Елена Смирнова</h3>
+                        <p>Специалист по эстетическому восстановлению.</p>
+                    </div>
+                </article>
+
+
+                <article class="doctor-card">
+                    <div class="doctor-photo">
+                        <img
+                            src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=700&q=85"
+                            alt="Врач стоматолог"
+                        >
+                    </div>
+                    <div class="doctor-info">
+                        <span>ХИРУРГ-ИМПЛАНТОЛОГ</span>
+                        <h3>Дмитрий Петров</h3>
+                        <p>Специалист по хирургической стоматологии.</p>
+                    </div>
+                </article>
+
+            </div>
+
         </div>
+
+    </section>
+
+
+    <!-- REVIEWS -->
+
+    <section class="section reviews" id="reviews">
+
+        <div class="container">
+
+            <div class="reviews-heading">
+
+                <div>
+                    <div class="eyebrow">
+                        <span class="eyebrow-line"></span>
+                        ОТЗЫВЫ ПАЦИЕНТОВ
+                    </div>
+
+                    <h2>Ваше доверие —<br>наша <span>мотивация.</span></h2>
+                </div>
+
+                <div class="review-rating">
+                    <strong>4.9</strong>
+                    <div>
+                        <div class="rating-stars">★★★★★</div>
+                        <span>Демонстрационный рейтинг</span>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="reviews-grid">
+
+                <article class="review-card">
+                    <div class="rating-stars">★★★★★</div>
+                    <p>
+                        «Очень приятная атмосфера. Врач подробно
+                        объяснил каждый этап лечения. Остались
+                        только положительные впечатления».
+                    </p>
+                    <div class="review-author">
+                        <div class="author-avatar">А</div>
+                        <div>
+                            <strong>Анна К.</strong>
+                            <span>Пациент клиники</span>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article class="review-card">
+                    <div class="rating-stars">★★★★★</div>
+                    <p>
+                        «Понравилось отношение персонала и
+                        профессионализм врача. Всё прошло
+                        спокойно и комфортно».
+                    </p>
+                    <div class="review-author">
+                        <div class="author-avatar">М</div>
+                        <div>
+                            <strong>Максим Р.</strong>
+                            <span>Пациент клиники</span>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article class="review-card">
+                    <div class="rating-stars">★★★★★</div>
+                    <p>
+                        «Современная клиника, приятный интерьер
+                        и внимательные специалисты. Спасибо
+                        за качественный подход!»
+                    </p>
+                    <div class="review-author">
+                        <div class="author-avatar">Д</div>
+                        <div>
+                            <strong>Диана С.</strong>
+                            <span>Пациент клиники</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- APPOINTMENT -->
+
+    <section class="appointment" id="appointment">
+
+        <div class="container appointment-grid">
+
+            <div class="appointment-content">
+
+                <div class="eyebrow eyebrow-light">
+                    <span class="eyebrow-line"></span>
+                    МЫ ВСЕГДА НА СВЯЗИ
+                </div>
+
+                <h2>
+                    Время позаботиться<br>
+                    о своей <span>улыбке.</span>
+                </h2>
+
+                <p>
+                    Оставьте заявку, и наш администратор
+                    свяжется с вами для уточнения удобного времени.
+                </p>
+
+                <div class="appointment-contact">
+                    <span>ПОЗВОНИТЕ НАМ</span>
+                    <a href="tel:+996555123456">+996 555 123 456</a>
+                </div>
+
+            </div>
+
+
+            <form class="appointment-form" id="appointmentForm">
+
+                <h3>Запись на приём</h3>
+                <p>Заполните форму — это займёт меньше минуты.</p>
+
+                <label for="name">Ваше имя</label>
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Например, Александр"
+                    required
+                >
+
+                <label for="phone">Номер телефона</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="+996 555 123 456"
+                    required
+                >
+
+                <label for="service">Выберите услугу</label>
+
+                <select id="service" required>
+                    <option value="">Выберите услугу</option>
+                    <option>Лечение зубов</option>
+                    <option>Эстетическая стоматология</option>
+                    <option>Имплантация</option>
+                    <option>Профессиональная гигиена</option>
+                    <option>Консультация</option>
+                </select>
+
+                <button type="submit" class="button button-green form-button">
+                    Отправить заявку <span>↗</span>
+                </button>
+
+                <small>
+                    Нажимая кнопку, вы соглашаетесь на обработку
+                    предоставленных данных.
+                </small>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACTS -->
+
+    <section class="section contacts" id="contacts">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div>
+                    <div class="eyebrow">
+                        <span class="eyebrow-line"></span>
+                        НАЙДИТЕ НАС
+                    </div>
+
+                    <h2>Будем рады<br><span>вас видеть.</span></h2>
+                </div>
+
+                <p>
+                    Мы готовы ответить на ваши вопросы
+                    и помочь выбрать удобное время для визита.
+                </p>
+
+            </div>
+
+
+            <div class="contacts-grid">
+
+                <div class="contact-item">
+                    <span>АДРЕС</span>
+                    <strong>г. Бишкек, ул. Примерная, 15</strong>
+                </div>
+
+                <div class="contact-item">
+                    <span>ТЕЛЕФОН</span>
+                    <a href="tel:+996555123456">+996 555 123 456</a>
+                </div>
+
+                <div class="contact-item">
+                    <span>ГРАФИК РАБОТЫ</span>
+                    <strong>Пн — Сб: 09:00 — 20:00</strong>
+                </div>
+
+                <div class="contact-item">
+                    <span>ЭЛЕКТРОННАЯ ПОЧТА</span>
+                    <a href="mailto:info@dentora.example">info@dentora.example</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+    <div class="container footer-top">
+
+        <a href="#" class="logo footer-logo">
+            <span class="logo-icon">D</span>
+            <span>DENTORA<span class="logo-dot">.</span></span>
+        </a>
+
+        <p>
+            Современная стоматология.<br>
+            Забота о вашей улыбке.
+        </p>
+
+        <a href="#appointment" class="footer-link">
+            Записаться на приём ↗
+        </a>
+
     </div>
-</div>
-    <div class="doctors-grid">
-        <article class="doctor-card">
-            <div class="doctor-photo photo-one"></div>
-            <h3>Александр Иванов</h3>
-            <p>Главный врач · Терапевт</p>
-        </article>
-        <article class="doctor-card">
-            <div class="doctor-photo photo-two"></div>
-            <h3>Мария Петрова</h3>
-            <p>Стоматолог · Ортодонт</p>
-        </article>
-        <article class="doctor-card">
-            <div class="doctor-photo photo-three"></div>
-            <h3>Дмитрий Соколов</h3>
-            <p>Хирург · Имплантолог</p>
-        </article>
+
+    <div class="container footer-bottom">
+        <span>© 2026 DENTORA. Демонстрационный сайт.</span>
+        <a href="#top">Наверх ↑</a>
     </div>
-</div>
-    <div class="price-list">
-        <div><span>Консультация стоматолога</span><strong>от 500 сом</strong></div>
-        <div><span>Лечение кариеса</span><strong>от 2 500 сом</strong></div>
-        <div><span>Профессиональная чистка</span><strong>от 3 000 сом</strong></div>
-        <div><span>Отбеливание зубов</span><strong>от 7 000 сом</strong></div>
-        <div><span>Имплантация</span><strong>от 25 000 сом</strong></div>
-    </div>
-    <p class="demo-note">* Демонстрационные цены. Требуют подтверждения клиникой.</p>
-</div>
-    <form id="appointmentForm" class="appointment-form">
-        <h3>Записаться на приём</h3>
 
-        <label for="name">Ваше имя</label>
-        <input type="text" id="name" placeholder="Как к вам обращаться?" required>
+</footer>
 
-        <label for="phone">Номер телефона</label>
-        <input type="tel" id="phone" placeholder="+996 555 000 000" required>
 
-        <label for="service">Выберите услугу</label>
-        <select id="service" required>
-            <option value="">Выберите направление</option>
-            <option>Лечение зубов</option>
-            <option>Имплантация</option>
-            <option>Отбеливание</option>
-            <option>Ортодонтия</option>
-            <option>Консультация</option>
-        </select>
+<script src="script.js"></script>
 
-        <button type="submit" class="btn-primary form-button">Отправить заявку ↗</button>
-        <small class="form-notice">Нажимая кнопку, вы соглашаетесь на обработку предоставленных данных.</small>
-        <p id="formMessage" role="status"></p>
-    </form>
-</div>
+</body>
+</html>
