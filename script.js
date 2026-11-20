@@ -1,50 +1,83 @@
-// Мобильное меню
-const menuToggle = document.getElementById('menuToggle');
-const navigation = document.getElementById('navigation');
+// MOBILE MENU
 
-menuToggle.addEventListener('click', () => {
-    navigation.classList.toggle('active');
+const menuToggle = document.getElementById("menuToggle");
+const nav = document.getElementById("nav");
+
+menuToggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
 });
 
-navigation.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-        navigation.classList.remove('active');
+// CLOSE MENU AFTER CLICK
+
+document.querySelectorAll(".nav a").forEach(link => {
+    link.addEventListener("click", () => {
+        nav.classList.remove("active");
     });
 });
 
-// Форма записи
-const appointmentForm = document.getElementById('appointmentForm');
-const formMessage = document.getElementById('formMessage');
 
-// ВАЖНО: замени номер на реальный номер WhatsApp.
-// Формат: код страны + номер, без плюса и пробелов.
-const WHATSAPP_NUMBER = '996555123456';
+// APPOINTMENT FORM
 
-appointmentForm.addEventListener('submit', function(event) {
+const form = document.getElementById("appointmentForm");
+
+form.addEventListener("submit", function(event) {
+
     event.preventDefault();
 
-    const name = document.getElementById('name').value.trim();
-    const phone = document.getElementById('phone').value.trim();
-    const service = document.getElementById('service').value;
+    const name = document.getElementById("name").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const service = document.getElementById("service").value;
 
     if (!name || !phone || !service) {
-        formMessage.textContent = 'Пожалуйста, заполните все поля.';
+        alert("Пожалуйста, заполните все поля.");
         return;
     }
 
-    const message = `Здравствуйте! Хочу записаться на приём.
+    // DEMO WHATSAPP NUMBER
+    // Replace with the real clinic number.
+
+    const whatsappNumber = "996555123456";
+
+    const message = `
+Здравствуйте! Хочу записаться на приём.
 
 Имя: ${name}
 Телефон: ${phone}
-Услуга: ${service}`;
+Услуга: ${service}
+    `;
 
     const whatsappURL =
-       orAll('a').forEach(link => {
-    link.addEventListener('click', () => {
+        "https://wa.me/" +
+        whatsappNumber +
+        "?text=" +
+        encodeURIComponent(message);
+
+    window.open(whatsappURL, "_blank");
+
+});
 
 
-    window.open(whatsappURL, '_blank');
+// SIMPLE SCROLL REVEAL
 
-    formMessage.textContent = 'Откройте WhatsApp, чтобы отправить заявку.';
-    appointmentForm.reset();
+const observer = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+        }
+
+    });
+
+}, {
+    threshold: 0.12
+});
+
+document.querySelectorAll(
+    ".service-card, .doctor-card, .review-card, .advantage"
+).forEach(element => {
+
+    element.classList.add("reveal");
+    observer.observe(element);
+
 });
